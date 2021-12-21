@@ -20,4 +20,9 @@
     add_action('wp_enqueue_scripts', 'university_files');
     //at which moment to call, the name of the function the wordpress has to call
     //at specific moment
+
+    function university_features(){
+        add_theme_support('title-tag');
+    }
+    add_action('after_setup_theme', 'university_features');
 ?>
